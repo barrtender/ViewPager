@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.viewpager">
+
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.example.viewpager.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>&#13;
+                <data android:scheme="touchtest-367b9cab-24e6-4469-a4be-c8eafaed07d6"/>&#13;
+                <action android:name="android.intent.action.VIEW"/>&#13;
+                <category android:name="android.intent.category.BROWSABLE"/>&#13;
+                <category android:name="android.intent.category.DEFAULT"/>&#13;
+            </intent-filter>&#13;
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.soasta.android.touchtest.TouchTestService"/>&#13;
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>&#13;
+        <uses-permission android:name="android.permission.INTERNET"/>&#13;
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>&#13;
+        <uses-permission android:name="android.permission.BLUETOOTH"/>&#13;
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>&#13;
+    </manifest>
